@@ -1,9 +1,14 @@
 //@format
 
 module.exports = class RecordedPlayer {
-  constructor(moves) {
+  constructor(mark, moves) {
+    this.mark = mark;
     this.counter = 0;
     this.moves = moves;
+  }
+
+  getMark() {
+    return this.mark;
   }
 
   getMove() {
