@@ -11,8 +11,8 @@ describe('Game', () => {
   });
 
   it('ends in draw', () => {
-    const recordedPlayerOne = new RecordedPlayer('X', [1, 2, 3, 4, 5]);
-    const recordedPlayerTwo = new RecordedPlayer('O', [6, 7, 8, 9]);
+    const recordedPlayerOne = new RecordedPlayer('X', [2, 4, 6, 7, 9]);
+    const recordedPlayerTwo = new RecordedPlayer('O', [1, 3, 5, 8]);
     const game = new Game(recordedPlayerOne, recordedPlayerTwo);
 
     game.play();
