@@ -19,4 +19,14 @@ describe('Game', () => {
 
     expect(game.isOver()).toEqual(true);
   });
+
+  it('ends in win', () => {
+    const recordedPlayerOne = new RecordedPlayer('X', [1, 2, 3]);
+    const recordedPlayerTwo = new RecordedPlayer('O', [4, 5]);
+    const game = new Game(recordedPlayerOne, recordedPlayerTwo);
+
+    game.play();
+
+    expect(game.isOver()).toEqual(true);
+  });
 });

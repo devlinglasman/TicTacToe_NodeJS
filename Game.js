@@ -12,7 +12,7 @@ module.exports = class Game {
 
   play() {
     const move = this.activePlayer.getMove();
-    this.board.setMark(move, this.activePlayer.getMark);
+    this.board.setMark(move, this.activePlayer.getMark());
     if (this.isOver()) {
     } else {
       this.activePlayer = this.switchPlayer(this.activePlayer);
